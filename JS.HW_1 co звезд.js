@@ -29,32 +29,30 @@
 // 2*:
 // Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
 
-// let age_1 = 10;
-// let age_2 = 18;
-// let age_3 = 60;
+let age_1 = 10;
+let age_2 = 18;
+let age_3 = 60;
 
-// const checkAge = function checkAge(age_1) {
-//   age_1 = Number(age_1);
-//   console.log(age_1);
-//   if (age_1) {
-//     if (age_1 < age_2) {
-//       console.log(
-//         "You don’t have access cause your age is " + age_1 + " It’s less then"
-//       );
-//     } else if (age_1 >= age_2 && age_1 < age_3) {
-//       console.log("Welcome  !");
-//     } else if (age_1 > age_3) {
-//       console.log("Keep calm and look Culture channel");
-//     } else {
-//       console.log("Technical work");
-//     }
-//   } else console.log("Not an integer value");
-// };
+const checkAge = function checkAge(age_1) {
+  if (typeof age_1 == "number") {
+    if (age_1 < age_2) {
+      console.log(
+        "You don’t have access cause your age is " + age_1 + " It’s less then"
+      );
+    } else if (age_1 >= age_2 && age_1 < age_3) {
+      console.log("Welcome  !");
+    } else if (age_1 > age_3) {
+      console.log("Keep calm and look Culture channel");
+    } else {
+      console.log("Technical work");
+    }
+  } else console.log("Not an integer value");
+};
 
-// checkAge(17);
-// checkAge(18);
-// checkAge(61);
-// checkAge("QA");
+checkAge(17);
+checkAge(18);
+checkAge(61);
+checkAge("QA");
 
 // 3**:
 // Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
@@ -86,24 +84,24 @@
 
 // 4***:
 // Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
-const age_1 = 10;
-const age_2 = 18;
-const age_3 = 60;
+// const age_1 = 10;
+// const age_2 = 18;
+// const age_3 = 60;
 
-const checkAge = function checkAge(age_1) {
-  if (!isNaN(age_1)) {
-    if (age_1 < age_2) {
-      console.log(
-        "You don’t have access cause your age is " + age_1 + " It’s less then"
-      );
-    } else if (age_1 >= age_2 && age_1 < age_3) {
-      console.log("Welcome  !");
-    } else if (age_1 > age_3) {
-      console.log("Keep calm and look Culture channel");
-    } else {
-      console.log("Technical work");
-    }
-  } else console.log("Not an integer value");
-};
-let a = prompt("Write your age");
-checkAge(a);
+// const checkAge = function checkAge(age_1) {
+//   if (!isNaN(age_1)) {
+//     if (age_1 < age_2) {
+//       console.log(
+//         "You don’t have access cause your age is " + age_1 + " It’s less then"
+//       );
+//     } else if (age_1 >= age_2 && age_1 < age_3) {
+//       console.log("Welcome  !");
+//     } else if (age_1 > age_3) {
+//       console.log("Keep calm and look Culture channel");
+//     } else {
+//       console.log("Technical work");
+//     }
+//   } else console.log("Not an integer value");
+// };
+// let a = prompt("Write your age");
+// checkAge(a);
